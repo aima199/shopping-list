@@ -6,3 +6,9 @@ shopping_list = [
 ]
 
 print(shopping_list)
+
+unpurchased = [item for item in shopping_list if not item["purchased"]]
+
+print("Unpurchased items:")
+for item in unpurchased:
+    print(item["item"])
